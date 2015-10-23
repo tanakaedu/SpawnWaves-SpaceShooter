@@ -19,6 +19,7 @@ Unity公式チュートリアルのSpaceShooterの敵の出現をパターン化
 
 # オリジナルのウェーブの作成方法
 敵の出現させるルーチンは、ベースクラスのSpawnWaveクラスを継承して作成する。
+
 1. 新しいクラスを作成して、継承元をMonoBehaviourからSpawnWaveに変更する
 2. public override IEnumerator spawnWave()を定義して、上書きする
 3. Unityで新しいゲームオブジェクトを作成して、作成したスクリプトを追加
