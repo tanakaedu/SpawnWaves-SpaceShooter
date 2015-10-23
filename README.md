@@ -1,0 +1,2 @@
+# SpawnWaves-SpaceShooter
+Unity公式チュートリアルのSpaceShooterの敵の出現をパターン化するためのコード。
