@@ -27,5 +27,5 @@ Unity公式チュートリアルのSpaceShooterの敵の出現をパターン化
 5. 作成したゲームオブジェクトをプレハブ化して、[Hierarchy]ビューから削除
 6. [Hierarchy]ビューの[Game Controller]の[Spawn Waves]欄に追加する
 
-詳しくは、SpawnWaveRandomスクリプトを参照のこと。
+詳しくは、[SpawnWaveRandomスクリプト](https://github.com/tanakaedu/SpawnWaves-SpaceShooter/blob/master/Assets/Scripts/SpawnWaveRandom.cs)を参照のこと。
 
