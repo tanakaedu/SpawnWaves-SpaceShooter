@@ -1,5 +1,5 @@
 # SpawnWaves-SpaceShooter
-Unity公式チュートリアルのSpaceShooterの敵の出現をパターン化するためのコード。
+Unity公式チュートリアルのSpaceShooterの敵の出現パターンを増やすためのコード。
 
 # 使い方
 1. SpaceShooterのGameController.cs内のSpawnWaves()関数を、本リポジトリのGameController.csのSpawnWaves()関数に置き換える
