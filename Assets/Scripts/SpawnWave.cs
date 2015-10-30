@@ -12,9 +12,6 @@ using System.Collections;
  * 6. [Hierarchy]ビューの[Game Controller]の[Spawn Waves]欄に追加する
  */
 public abstract class SpawnWave : MonoBehaviour {
-	/** このウェーブで出現させる敵のプレハブ*/
-	public GameObject[] spawnPrefabs;
-
 	/** デフォルトは、Unity公式のSpaceShooterの出現ルーチン。
 	 * ランダムで、設定されている敵を出現させる
 	 */

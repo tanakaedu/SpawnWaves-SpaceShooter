@@ -13,8 +13,8 @@ using System.Collections;
  * 6. [Hierarchy]ビューの[Game Controller]の[Spawn Waves]欄に追加する
  */
 public class SpawnWaveFormation : SpawnWave {
-	/** 出現させたオブジェクトがすべて画面から消えてから、何秒経過したら次のウェーブに移行させるか(でっフォルトは3秒)*/
-	public float NextTime = 3f;
+	/** 出現させたオブジェクトがすべて画面から消えてから、何秒経過したら次のウェーブに移行させるか(デフォルトは2秒)*/
+	public float NextTime = 2f;
 	/** このウェーブが持っている敵のプレハブ*/
 	Transform[] enemies;
 	/** 出現待ち*/

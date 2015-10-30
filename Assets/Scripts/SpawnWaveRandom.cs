@@ -8,6 +8,8 @@ using System.Collections;
  * @url http://unity3d.com/jp/learn/tutorials/projects/space-shooter/game-controller?playlist=17147
  */
 public class SpawnWaveRandom : SpawnWave {
+	/** このウェーブで出現させる敵のプレハブ*/
+	public GameObject[] spawnPrefabs;
 	/** 敵を出現させる座標*/
 	public Vector3 spawnValues = new Vector3(6f, 0f, 16f);
 	/** 出現させる敵の数*/
