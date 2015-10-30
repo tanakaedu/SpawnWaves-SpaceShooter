@@ -3,7 +3,7 @@ Unity公式チュートリアルのSpaceShooterの敵の出現パターンを増
 
 # 使い方
 1. SpaceShooterのGameController.cs内のSpawnWaves()関数を、本リポジトリのGameController.csのSpawnWaves()関数に置き換える
-- 本リポジトリのScriptsフォルダー内の[SpawnWave.cs]と[SpawnWaveRandom.cs]を、[SpaceShooter]のScriptsフォルダーにコピーする
+- 本リポジトリのScriptsフォルダー内の[SpawnWave.cs]と[SpawnWaveRandom.cs]と[SpawnWaveFormation.cs ]を、[SpaceShooter]のScriptsフォルダーにコピーする
 - SpaceShooterをUnityで開く
 - [Hierarchy]ビューの[Create]から[Create Empty]で空のゲームオブジェクトを作成
 - 名前を[SpawnWaveRandom]にする
@@ -17,7 +17,16 @@ Unity公式チュートリアルのSpaceShooterの敵の出現パターンを増
 以上で設定完了。実行結果は変わらないが、自前でウェーブを作成して登録することができるようになった。
 
 
-# オリジナルのウェーブの作成方法
+# ウェーブをプレハブ化した場合の作成方法
+- ウェーブ用の空のゲームオブジェクトを作成して、Wave？？？という名前に変更
+- 作成したゲームオブジェクトに[SpawnWaveFormation]スクリプトを追加
+- 出現させる敵を[Hierarchy]ビューで配置する
+- 出現させる敵を最初にウェーブ用のゲームオブジェクトの子供にする
+- ウェーブ用のゲームオブジェクトをプレハブ化して[Hierarchy]ビューから削除
+- [GameController]のSpawn Waves欄に作成したウェーブ用のプレハブをドラッグ＆ドロップ
+
+
+# スクリプトで出現させるオリジナルのウェーブの作成方法
 敵の出現させるルーチンは、ベースクラスのSpawnWaveクラスを継承して作成する。
 
 1. 新しいクラスを作成して、継承元をMonoBehaviourからSpawnWaveに変更する
